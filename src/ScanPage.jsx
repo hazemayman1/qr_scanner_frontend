@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, Typography, Button, CircularProgress } from "@mui/material";
 import { useNavigate } from "react-router-dom"; // if you're using React Router
+import kmt from "./assets/kmt.png"; // adjust path as needed
 
 function ScanPage() {
   const navigate = useNavigate(); // required for redirecting
@@ -123,7 +124,7 @@ function ScanPage() {
       {/* Banner */}
       <Box sx={{ mb: 4 }}>
         <img
-          src="src/assets/kmt.png" // Replace with your logo path
+          src={kmt} // Replace with your logo path
           alt="Logo"
           style={{ width: "300px", height: "auto" }} // Adjust width as needed
         />

@@ -7,6 +7,7 @@ import {
   CircularProgress,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import kmt from "./assets/kmt.png"; // adjust path as needed
 
 function LoginPage() {
   const params = new URLSearchParams(location.search);
@@ -64,7 +65,7 @@ function LoginPage() {
     >
       <Box sx={{ mb: 4 }}>
         <img
-          src="src/assets/kmt.png" // Replace with your logo path
+          src={kmt} // Replace with your logo path
           alt="Logo"
           style={{ width: "300px", height: "auto" }} // Adjust width as needed
         />
