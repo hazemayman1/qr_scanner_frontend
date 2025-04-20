@@ -74,8 +74,7 @@ function ScanPage() {
         return res.json();
       })
       .then((data) => {
-        alert("Done successfully!");
-        window.location.reload(); // Refresh the page after successful submission
+        navigate("/success");
       })
       .catch((err) => {
         console.error(err);
