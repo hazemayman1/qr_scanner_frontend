@@ -143,7 +143,7 @@ function ScanPage() {
       >
         <Typography variant="h4" component="h1" color="white">
           {user.name}
-          {user.vip ? "  (VIP)" : ""}
+          {user.vip ? "  ("+{user.company}+")" : ""}
         </Typography>
       </Box>
       {entry == true && coffee == true ? (
